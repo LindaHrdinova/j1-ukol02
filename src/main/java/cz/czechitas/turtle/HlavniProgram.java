@@ -15,25 +15,30 @@ public class HlavniProgram {
 
     public void drawTriangle(double side) {
         for(int i = 0; i < 3; i++)
-        {zofka.move(side);
+        {
+            zofka.move(side);
             zofka.turnRight(120);}
     }
     public void drawSquare(double side) {
         for(int i = 0; i < 4; i++)
-        {zofka.move(side);
+        {
+            zofka.move(side);
             zofka.turnRight(90);}
     }
     public void drawRectangle(double sideA, double sideB) {
         for(int i = 0; i < 2; i++)
-        {zofka.move(sideA);
+        {
+            zofka.move(sideA);
             zofka.turnRight(90);
             zofka.move(sideB);
             zofka.turnRight(90);}
     }
 
-    public void drawCircle(double side) {
+    public void drawCircle(double diameter) {
         for(int i = 0; i < 36; i++)
-        {zofka.move(side);
+
+        {
+            zofka.move(diameter*Math.sin(Math.toRadians(5))); //source: https://www.vypocitejto.cz/obsah-obvod/mnohouhelnik/
             zofka.turnRight(10);}
     }
 
