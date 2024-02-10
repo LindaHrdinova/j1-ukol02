@@ -11,6 +11,7 @@ public class HlavniProgram {
 
     public void start() {
         //TODO Tady bude kód pro kreslení želví grafiky.
+        drawCircle(100.5);
     }
 
     public void drawTriangle(double side) {
