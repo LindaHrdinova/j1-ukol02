@@ -13,11 +13,40 @@ public class HlavniProgram {
 
     public void start() {
         //TODO Tady bude kód pro kreslení želví grafiky.
-        zofka.setPenColor(new Color(208, 86, 206));
-        drawCircle(100);
+        zofka.penUp();
+        zofka.move(200);
         zofka.turnRight(90);
-        zofka.setPenColor(new Color(217, 191, 180));
-        drawTriangle(100);
+        zofka.setPenColor(new Color(86, 171, 208));
+        zofka.penDown();
+        drawCircle(100);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(100);
+        zofka.turnLeft(90);
+        zofka.penDown();
+        drawCircle(150);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(75);
+        zofka.turnRight(90);
+        zofka.move(75);
+        zofka.turnLeft(90);
+        zofka.penDown();
+        drawCircle(50);
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(155);
+        zofka.turnLeft(90);
+        zofka.penDown();
+        drawCircle(50);
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(75);
+        zofka.turnLeft(90);
+        zofka.move(75);
+        zofka.turnLeft(90);
+        zofka.penDown();
+        drawCircle(220);
     }
 
     public void drawTriangle(double side) {
