@@ -2,6 +2,8 @@ package cz.czechitas.turtle;
 
 import dev.czechitas.java1.turtle.engine.Turtle;
 
+import java.awt.*;
+
 public class HlavniProgram {
     private Turtle zofka = new Turtle();
 
@@ -11,7 +13,11 @@ public class HlavniProgram {
 
     public void start() {
         //TODO Tady bude kód pro kreslení želví grafiky.
-        drawCircle(100.5);
+        zofka.setPenColor(new Color(208, 86, 206));
+        drawCircle(100);
+        zofka.turnRight(90);
+        zofka.setPenColor(new Color(217, 191, 180));
+        drawTriangle(100);
     }
 
     public void drawTriangle(double side) {
