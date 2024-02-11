@@ -13,40 +13,41 @@ public class HlavniProgram {
 
     public void start() {
         //TODO Tady bude kód pro kreslení želví grafiky.
-        zofka.penUp();
-        zofka.move(200);
+
+        zofka.setPenColor(new Color(52, 125, 20));
+        drawRectangle(180, 100);
+        zofka.turnLeft(90);
+        drawRectangle(160, 80);
         zofka.turnRight(90);
-        zofka.setPenColor(new Color(86, 171, 208));
-        zofka.penDown();
+        zofka.setPenColor(new Color(59, 59, 59));
         drawCircle(100);
         zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.move(15);
+        zofka.penDown();
+        drawCircle(30);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(15);
+        zofka.turnLeft(90);
+        zofka.move(60);
+        zofka.turnLeft(90);
+        zofka.move(15);
+        zofka.penDown();
+        drawCircle(30);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(15);
+        zofka.turnLeft(90);
+        zofka.move(60);
         zofka.turnRight(90);
         zofka.move(100);
-        zofka.turnLeft(90);
+        zofka.turnRight(180);
+        zofka.setPenColor(new Color(196, 34, 6));
         zofka.penDown();
-        drawCircle(150);
-        zofka.penUp();
-        zofka.turnRight(90);
-        zofka.move(75);
-        zofka.turnRight(90);
-        zofka.move(75);
-        zofka.turnLeft(90);
-        zofka.penDown();
-        drawCircle(50);
-        zofka.penUp();
-        zofka.turnLeft(90);
-        zofka.move(155);
-        zofka.turnLeft(90);
-        zofka.penDown();
-        drawCircle(50);
-        zofka.penUp();
-        zofka.turnLeft(90);
-        zofka.move(75);
-        zofka.turnLeft(90);
-        zofka.move(75);
-        zofka.turnLeft(90);
-        zofka.penDown();
-        drawCircle(220);
+        drawTriangle(120);
     }
 
     public void drawTriangle(double side) {
