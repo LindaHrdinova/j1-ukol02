@@ -21,13 +21,16 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.setPenColor(new Color(59, 59, 59));
         drawCircle(100);
+
         zofka.penUp();
         zofka.turnLeft(90);
         zofka.move(40);
         zofka.turnLeft(90);
         zofka.move(15);
+
         zofka.penDown();
         drawCircle(30);
+
         zofka.penUp();
         zofka.turnLeft(180);
         zofka.move(15);
@@ -35,8 +38,10 @@ public class HlavniProgram {
         zofka.move(60);
         zofka.turnLeft(90);
         zofka.move(15);
+
         zofka.penDown();
         drawCircle(30);
+
         zofka.penUp();
         zofka.turnLeft(180);
         zofka.move(15);
@@ -46,37 +51,39 @@ public class HlavniProgram {
         zofka.move(100);
         zofka.turnRight(180);
         zofka.setPenColor(new Color(196, 34, 6));
+
         zofka.penDown();
         drawTriangle(120);
     }
 
     public void drawTriangle(double side) {
-        for(int i = 0; i < 3; i++)
-        {
+        for (int i = 0; i < 3; i++) {
             zofka.move(side);
-            zofka.turnRight(120);}
+            zofka.turnRight(120);
+        }
     }
+
     public void drawSquare(double side) {
-        for(int i = 0; i < 4; i++)
-        {
+        for (int i = 0; i < 4; i++) {
             zofka.move(side);
-            zofka.turnRight(90);}
+            zofka.turnRight(90);
+        }
     }
+
     public void drawRectangle(double sideA, double sideB) {
-        for(int i = 0; i < 2; i++)
-        {
+        for (int i = 0; i < 2; i++) {
             zofka.move(sideA);
             zofka.turnRight(90);
             zofka.move(sideB);
-            zofka.turnRight(90);}
+            zofka.turnRight(90);
+        }
     }
 
     public void drawCircle(double diameter) {
-        for(int i = 0; i < 36; i++)
-
-        {
-            zofka.move(diameter*Math.sin(Math.toRadians(5))); //source: https://www.vypocitejto.cz/obsah-obvod/mnohouhelnik/
-            zofka.turnRight(10);}
+        for (int i = 0; i < 36; i++) {
+            zofka.move(diameter * Math.sin(Math.toRadians(5))); //source: https://www.vypocitejto.cz/obsah-obvod/mnohouhelnik/
+            zofka.turnRight(10);
+        }
     }
 
 }
