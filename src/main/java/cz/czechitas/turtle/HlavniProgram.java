@@ -37,13 +37,6 @@ public class HlavniProgram {
         }
     }
 
-    public void drawSquare(double side) {
-        for (int i = 0; i < 4; i++) {
-            zofka.move(side);
-            zofka.turnRight(90);
-        }
-    }
-
     public void drawRectangle(double sideA, double sideB) {
         for (int i = 0; i < 2; i++) {
             zofka.move(sideA);
@@ -60,8 +53,7 @@ public class HlavniProgram {
         }
     }
 
-    public void drawIcecream()
-    {
+    public void drawIcecream() {
         zofka.setPenColor(new Color(208, 86, 206));
         drawCircle(100);
         zofka.turnRight(90);
@@ -69,6 +61,7 @@ public class HlavniProgram {
         zofka.setPenColor(new Color(217, 191, 180));
         drawTriangle(100);
     }
+
     public void drawSnowman() {
         zofka.penUp();
         zofka.move(200);
@@ -114,7 +107,6 @@ public class HlavniProgram {
         drawCircle(220);
     }
 
-
     public void drawEngine() {
         zofka.setPenColor(new Color(52, 125, 20));
         drawRectangle(180, 100);
@@ -156,6 +148,5 @@ public class HlavniProgram {
 
         zofka.penDown();
         drawTriangle(120);
-
     }
 }
